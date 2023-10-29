@@ -1,0 +1,2028 @@
+@font-face {
+  font-family: america;
+  src: url(GT-America-Expanded-Regular.ttf);
+}
+@font-face {
+  font-family: america-b;
+  src: url(./GT-America-Expanded-Black-Italic-Trial.otf);
+}
+
+*::-moz-selection {
+  color: #fff;
+  background-color: #111;
+}
+
+*::selection {
+  color: #fff;
+  background-color: #111;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: "gilroy";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  /* background-color: chartreuse; */
+}
+/* #main{
+  background-color: #111;
+} */
+#nav {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  padding: 10px 20px;
+  justify-content: space-between;
+  z-index: 999;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  color: #c45508;
+  /* background: linear-gradient(#ffffffeb,#ffffff); */
+}
+#nav h3 {
+  font-family: america;
+  text-transform: uppercase;
+  color: inherit;
+  text-align: center;
+  width: 20%;
+  font-size: 20px;
+  font-weight: 800;
+}
+#nav i {
+  display: none;
+}
+#nav h3:nth-child(1) {
+  text-align: left;
+}
+#nav h3:nth-child(2) {
+  text-align: left;
+}
+#nav h3:nth-child(3) {
+  text-align: right;
+}
+#nav h3:nth-child(4) {
+  text-align: right;
+}
+#full-scr {
+  display: none;
+}
+#page1 {
+  height: 100vh;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/b66561b8981387290c0f682665512759c66aa7bb-2880x1796.png/image.png?rect=1,0,2878,1796&bg=F2F1EC&w=1024&h=639&auto=format);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1.4);
+  -ms-transform: translate(-50%, -50%) scale(1.4);
+  transform: translate(-50%, -50%) scale(1.4);
+  scale: 1.4;
+  z-index: 999;
+  fill: #c45508;
+}
+svg path {
+  fill: inherit;
+}
+#page1 h1 {
+  font-size: 6.9vw;
+  padding: 0 0px;
+  text-align: center;
+  width: 100%;
+  bottom: -0.3%;
+  position: absolute;
+  color: #c45508;
+  text-transform: uppercase;
+  font-family: america;
+  font-weight: 900;
+}
+#page1 h1::before {
+  content: "bownds ranches. est. 1885 ";
+  position: absolute;
+  font-size: 1.1vw;
+  left: 2.7vw;
+  font-weight: 500;
+}
+#page1 h1::after {
+  content: "marketing & seling texas ranxhes";
+  position: absolute;
+  font-size: 1vw;
+  font-family: montserrat;
+  right: 2.7vw;
+  font-weight: 500;
+}
+#overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  /* background-color: red;     */
+}
+#scroll {
+  scale: 1;
+  background-color: black;
+  background-image: url(https://bowndsranches.com/textures/buttonDarkBg.svg);
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  word-spacing: 5px;
+  font-family: "gilory";
+  text-transform: uppercase;
+  -webkit-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.4s;
+  z-index: 9;
+}
+#page2 {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  padding: 50px 0;
+}
+#page2 h1 {
+  font-size: 9vw;
+  font-family: america-b;
+  line-height: 9.7vw;
+  word-spacing: -16px;
+  padding: 50px 100px;
+  background-color: #fff;
+  color: #111;
+  letter-spacing: -0.03em;
+  font-weight: 900;
+  background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/217c65c6aa3412acac7b3d2fa8adc9020e487780-2724x1936.jpg/map.jpg?rect=1,0,2723,1936&w=1024&h=728&auto=format);
+  align-items: center;
+  background-position: 10px 160px;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+}
+#page2 h1::before {
+  content: "THE REPRESENTATION YOU DESERVE";
+  position: absolute;
+  top: 37.8%;
+  width: 13%;
+  font-size: 1.1vw;
+  line-height: 1.3vw;
+  font-family: "gilroy";
+  word-spacing: 0px;
+  text-align: left;
+  letter-spacing: 0px;
+  font-weight: 500;
+}
+#page2 h1::after {
+  content: "ONE OF AMERICA'SBST BROKERAGES";
+  position: absolute;
+  bottom: 100%;
+  top: 37.8%;
+  width: 13%;
+  right: 10%;
+  font-size: 1.1vw;
+  line-height: 1.3vw;
+  font-family: "gilroy";
+  word-spacing: 0px;
+  text-align: right;
+  letter-spacing: 0px;
+  font-weight: 500;
+}
+#page2 img {
+  height: 800px;
+  position: relative;
+  left: 50%;
+  transform: rotate(10deg);
+  left: 28vw;
+  z-index: 9;
+}
+#page2 h2 {
+  font-size: 9vw;
+  font-family: america-b;
+  line-height: 9.7vw;
+  word-spacing: -23px;
+  top: -20px;
+  padding: 50px 100px;
+  position: relative;
+  color: #111;
+  font-size: 900;
+  background-color: #fff;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+#page2 h2::after {
+  content: "THIRD GENERATION FAMILY-OWNED RANCH BROKERAGE";
+  font-size: 12px;
+  line-height: 1.3vw;
+  position: absolute;
+  bottom: 08%;
+  left: 50%;
+  top: 90%;
+  word-spacing: 0px;
+  letter-spacing: -0.03px;
+  font-family: "gilroy";
+  font-weight: 600;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+#page3 {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #111;
+  padding: 100px 120px;
+}
+#page3 h1 {
+  color: #fff;
+  font-size: 80px;
+  font-family: america;
+  word-spacing: 0px;
+  line-height: 6vw;
+  letter-spacing: -0.02em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#page3 h2 {
+  color: #fff;
+  font-size: 85px;
+  font-family: america;
+  word-spacing: 0px;
+  line-height: 6vw;
+  font-weight: 100;
+  letter-spacing: -0.02em;
+  text-align: center;
+  -webkit-text-stroke: 3px #101010;
+  text-transform: uppercase;
+}
+
+#page3 p {
+  color: #fff;
+  font-size: 1vw;
+  font-family: "gilory";
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2vw;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+#img-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150px;
+  width: 150px;
+  background-image: url("https://cdn.sanity.io/images/sjvffa0f/production/9b2b1e20d57cf6988eb3192c1a261b8475d701d4-8192x5464.jpg/JRP_BR_01_1165-Edit.jpg?rect=1038,632,3956,4832&bg=F2F1EC&fp-x=0.3681506849315068&fp-y=0.5578489448352462&w=1024&h=1305&fit=crop&crop=focalpoint&auto=format");
+  background-position: top;
+  background-size: cover;
+  -webkit-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+}
+#img-div h5 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  font-size: 9px;
+  font-weight: 900;
+  bottom: 0;
+  z-index: 99;
+  padding: 10px 1px;
+  background-color: #fff;
+}
+#page3 h4 {
+  /* position: absolute; */
+  color: #fff;
+  display: flex;
+  margin-top: 50px;
+  font-size: 17px;
+  font-family: "gilroy";
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+}
+#page4 {
+  /* position: relative; */
+  min-height: 100vh;
+  width: 100%;
+  background-color: #111;
+  position: relative;
+}
+
+#page4 > button {
+  background-image: url(https://bowndsranches.com/textures/buttonBg.svg);
+  padding: 5px 2px;
+  position: absolute;
+  border: none;
+  text-align: center;
+  font-family: america;
+  text-transform: uppercase;
+  font-size: 15px;
+  z-index: 99;
+  transition: all linear 0.4s;
+}
+#page4 > img {
+  height: 400px;
+  position: absolute;
+  transition: all linear 0.4s;
+  width: 300px;
+}
+.elem {
+  border-top: 2px solid #ffffffc1;
+  position: relative;
+  cursor: default;
+  margin-top: -20px;
+}
+.elem:nth-last-child(1) {
+  border-bottom: 1px solid #ffffffc1;
+}
+.elem h1 {
+  font-size: 150px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-transition: opacity ease 0.1s;
+  -o-transition: opacity ease 0.1s;
+  transition: opacity ease 0.1s;
+  opacity: 0.3;
+  font-family: america;
+}
+.elem h2 {
+  font-size: 150px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  transition: opacity ease 0.1s;
+}
+#moving-text {
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: absolute;
+  top: 0;
+  -webkit-transition: opacity ease 0.1s;
+  -o-transition: opacity ease 0.1s;
+  transition: opacity ease 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+#moving-text h2 {
+  display: inline-block;
+  margin-left: -4px;
+  -webkit-animation-name: move-txt;
+  animation-name: move-txt;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  position: relative;
+  padding-right: 70px;
+  font-family: america-b;
+}
+#moving-text h2 img {
+  transform: rotate(45deg);
+  height: 30px;
+  right: 3%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.elem:hover #moving-text {
+  opacity: 1;
+}
+@-webkit-keyframes move-txt {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+.elem:hover h1 {
+  opacity: 0;
+}
+
+@keyframes move-txt {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+#page5 {
+  position: relative;
+  min-height: 200vh;
+  width: 100%;
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #111;
+}
+#page5-div1 {
+  height: 400px;
+  width: 600px;
+  transform: rotate(5deg);
+  position: absolute;
+  background-size: cover;
+  transform: rotate(5deg);
+  background-position: center;
+  background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/336838d48da46ea806426b4185e7f8a87262a6a5-1521x974.png/image.png?rect=1,0,1520,974&bg=F2F1EC&w=1024&h=656&auto=format);
+}
+
+#page5-div2 {
+  z-index: 99;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 600px;
+  transform: rotate(-4deg);
+  position: absolute;
+  background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/ac5d899c94acdca5124d1fcfb738940892e29544-1520x973.png/image.png?rect=0,1,1520,972&bg=F2F1EC&w=1024&h=655&auto=format);
+}
+#text-page5 h1 {
+  position: absolute;
+  color: #fff;
+  top: 910px;
+  font-size: 5em;
+  line-height: 1em;
+  word-spacing: 0px;
+  font-size: 700;
+  font-family: "gilroy";
+  letter-spacing: 3px;
+  padding: 120px 160px;
+}
+#text-page5 p {
+  font-family: var(--fonts-standardRegular);
+  font-size: 15px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: #fff;
+  width: 35%;
+  margin-top: 1190px;
+  margin-left: 420px;
+  font-weight: 700;
+  display: flex;
+  padding: 10px 22px;
+  justify-content: center;
+  font-family: "gilroy";
+  align-items: center;
+  /* margin-top: 1060px; */
+}
+#div-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150px;
+  width: 150px;
+  background-image: url("https://cdn.sanity.io/images/sjvffa0f/production/979d0330a17f2cc1d81f19104cef1254eac926c5-310x192.png/image.png?rect=0,10,310,173&bg=F2F1EC&w=310&h=173&fit=min&auto=format");
+  background-position: top;
+  background-size: cover;
+  transition: all linear 0.1s;
+  transform: scale(0);
+}
+#div-img h5 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  font-size: 10px;
+  font-weight: 900;
+  bottom: 0;
+  z-index: 99;
+  padding: 10px 1px;
+  background-color: #fff;
+}
+#page6 {
+  min-height: 200vh;
+  width: 100%;
+  color: #111;
+  padding: 2px;
+  position: relative;
+}
+
+#page6 img {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+#page6-text {
+  position: relative;
+  z-index: 99;
+  padding: 5px 20px;
+}
+#page6-text h1 {
+  font-size: 5vw;
+  line-height: 5vw;
+  color: #fff;
+  font-family: america;
+}
+#text-right {
+  position: absolute;
+  top: 150%;
+  right: 10%;
+  width: 20%;
+}
+#text-right p {
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+}
+#page6-text button {
+  padding: 12px 30px;
+  font-size: 15px;
+  margin-top: 30px;
+  font-family: america;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+#page6-text button:hover {
+  color: #111;
+}
+#page6-text button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  left: 0;
+  top: 100%;
+  -webkit-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  z-index: -1;
+}
+
+#page6-text button:hover::after {
+  top: 0;
+}
+
+#text-center {
+  position: absolute;
+  top: 340%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  text-align: center;
+  width: 90%;
+}
+
+#page6-text h2 {
+  font-size: 4vw;
+  line-height: 3.5vw;
+  text-align: center;
+  font-family: "america";
+  color: #fff;
+}
+#page7 {
+  min-height: 130vh;
+  width: 100%;
+  background-color: #000;
+
+  padding: 190px 200px;
+}
+#page7 > button {
+  position: absolute;
+  height: 90px;
+  width: 90px;
+  height: 120px;
+  width: 120px;
+  font-size: 0.8em;
+  font-weight: 600;
+  transform: rotate(-40deg);
+  /* color:#fff; */
+  /* background-color: #111; */
+  background-image: url(https://bowndsranches.com/textures/yellowBadge.svg);
+  background-position: center;
+  background-size: cover;
+  border: none;
+  z-index: 99;
+  margin-left: 140px;
+  margin-top: 90px;
+  border-radius: 120px;
+}
+#page7 h1 {
+  display: flex;
+  /* font-size: 60px; */
+  font-family: america-b;
+  color: #fff;
+  text-transform: uppercase;
+  align-items: center;
+  /* word-spacing: 0px; */
+  /* letter-spacing: -6px; */
+  /* line-height: 150px; */
+  grid-column: 2 / -2;
+  text-align: center;
+  /* max-width: 0.3em; */
+  justify-self: center;
+  line-height: 75%;
+  position: relative;
+  font-size: calc((100vw - 48px) * 0.125);
+}
+#page7 h1::before {
+  content: "WE MARKET & SELL TEXAS RANCHES";
+  position: absolute;
+  bottom: -5%;
+  font-size: 1.1vw;
+  color: #fff;
+  width: 33%;
+  left: -14%;
+  text-align: left;
+  line-height: 1.3vw;
+  font-family: gilroy;
+  word-spacing: 0px;
+  letter-spacing: 0px;
+  font-weight: 500;
+}
+#page7 h1::after {
+  content: "over sir decades of experience across texas";
+  position: absolute;
+  bottom: -5%;
+  font-size: 1.1vw;
+  color: #fff;
+  width: 33%;
+  right: -19%;
+  text-align: left;
+  line-height: 1.3vw;
+  font-family: gilroy;
+  word-spacing: 0px;
+  letter-spacing: 0px;
+  font-weight: 500;
+}
+#page7 h2 {
+  position: absolute;
+  color: #fff;
+  font-size: 1.6em;
+  align-items: center;
+  right: 600px;
+  font-size: 1.6em;
+}
+#text3 h3 {
+  position: absolute;
+  color: #fff;
+  margin-top: 130px;
+  margin-left: -10%;
+  font-size: 1.4em;
+  text-align: left;
+  font-weight: 700;
+}
+#page9 img{
+  position: absolute;
+  height: 120px;
+  top: 20px;
+  width: 120px;
+  left: 90%;
+}
+#text3 h4 {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  margin-top: 130px;
+  margin-left: 310px;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+#text3 h5 {
+  position: absolute;
+  color: #fff;
+  margin-top: 130px;
+  margin-left: 890px;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+#text4 h3 {
+  position: absolute;
+  color: #fff;
+  margin-top: 250px;
+  margin-left: 8%;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#text4 h4 {
+  position: absolute;
+  color: #fff;
+  margin-top: 250px;
+  margin-left: 40%;
+  font-size: 1.5em;
+  width: 16%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  #main {
+    overflow-x: hidden;
+  }
+  #nav {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    z-index: 99;
+    color: #c45508;
+  }
+
+  #nav h3 {
+    font-family: america;
+    text-transform: uppercase;
+    color: inherit;
+    font-size: 28px;
+    width: 20%;
+    /* background-color: red; */
+    text-align: center;
+    display: none;
+  }
+  #nav i {
+    display: block;
+    font-size: 25px;
+    font-weight: 900;
+  }
+
+  #nav h3:nth-child(1) {
+    text-align: left;
+  }
+
+  #nav h3:nth-child(2) {
+    text-align: left;
+  }
+
+  #nav h3:nth-child(3) {
+    text-align: right;
+  }
+
+  #nav h3:nth-child(4) {
+    text-align: right;
+  }
+  #full-scr {
+    height: 100vh;
+    width: 100%;
+    background-color: #faf6ef;
+    position: fixed;
+    z-index: 999;
+    padding: 130px 18px 18px 18px;
+    top: -100vh;
+    transition: all cubic-bezier(0, 0.93, 0.91, 0.98) 0.7s;
+    display: block;
+  }
+
+  #full-scr i {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    font-size: 34px;
+    font-weight: 800;
+  }
+
+  #page1 {
+    height: 80vh;
+    position: relative;
+    width: 100%;
+    background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/b66561b8981387290c0f682665512759c66aa7bb-2880x1796.png/image.png?bg=F2F1EC&w=1440&h=898&auto=format);
+    background-size: cover;
+    background-position: 40% 30%;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  #page1 h1::before {
+    content: "bownds ranches. est. 1885";
+    position: absolute;
+    font-size: 3.2vw;
+    width: 35%;
+    top: -25%;
+    font-family: gilroy;
+    line-height: 3.2vw;
+    text-align: left;
+    font-weight: 500;
+    left: 6.7vw;
+  }
+
+  #page1 h1::after {
+    content: "marketing and selling texas ranches";
+    position: absolute;
+    font-size: 3.2vw;
+    width: 45%;
+    top: -25%;
+    font-family: gilroy;
+    line-height: 3.2vw;
+    text-align: right;
+    font-weight: 500;
+    right: 6.7vw;
+  }
+
+  svg {
+    position: absolute;
+    font-size: 3.2vw;
+    width: 35%;
+    top: -25%;
+    font-family: gilroy;
+    line-height: 3.2vw;
+    text-align: left;
+    font-weight: 500;
+    left: 6.7vw;
+  }
+  svg {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1.3);
+    -ms-transform: translate(-50%, -50%) scale(1.3);
+    transform: translate(-50%, -50%) scale(1.3);
+    z-index: 99;
+    fill: #c45508;
+  }
+
+  path {
+    fill: inherit;
+  }
+
+  /* #page1 h1 {
+    display: none;
+  } */
+  #full-scr svg {
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.75);
+    z-index: 99;
+    fill: #101010;
+  }
+  #full-scr path {
+    fill: inherit;
+  }
+
+  #overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+
+  #scroll {
+    background-image: url(https://bowndsranches.com/textures/buttonDarkBg.svg);
+    padding: 8px 20px;
+    font-family: america;
+    word-spacing: 5px;
+    color: #fff;
+    position: absolute;
+    text-transform: uppercase;
+    scale: 0;
+    -webkit-transition: all ease-out 0.3s;
+    -o-transition: all ease-out 0.3s;
+    transition: all ease-out 0.3s;
+  }
+  #overlay {
+    display: none;
+  }
+
+  #scroll {
+    display: none;
+  }
+
+  #page2 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    /* background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/217c65c6aa3412acac7b3d2fa8adc9020e487780-2724x1936.jpg/map.jpg?rect=1,0,2723,1936&w=1024&h=728&auto=format); */
+    background-position: 60% 0%;
+    background-color: #fff;
+    padding: 40px 0;
+  }
+
+  #page2 h1 {
+    font-size: 19vw;
+    line-height: 16vw;
+    word-spacing: -2px;
+    letter-spacing: -1px;
+    text-align: center;
+    overflow: hidden;
+    padding: 0px 0px;
+    color: #111;
+    position: relative;
+    background-color: #fff;
+    background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/217c65c6aa3412acac7b3d2fa8adc9020e487780-2724x1936.jpg/map.jpg?rect=1,0,2723,1936&w=1024&h=728&auto=format);
+    background-position: 0% 1200%;
+    background-repeat: no-repeat;
+    font-family: america-b;
+  }
+
+  #page2 h1::before {
+    content: "THE REPRESENTATION YOU DESERVE";
+    position: absolute;
+    bottom: 0%;
+    font-size: 3vw;
+    width: 25%;
+    text-align: left;
+    left: 5%;
+    line-height: 3.3vw;
+    font-family: gilroy;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    font-weight: 500;
+  }
+
+  #page2 h1::after {
+    content: "ONE OF AMERICA’S BEST BROKERAGES";
+    position: absolute;
+    bottom: 0%;
+    font-size: 3vw;
+    width: 25%;
+    right: 5%;
+    text-align: right;
+    line-height: 3vw;
+    font-family: gilroy;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    font-weight: 500;
+  }
+
+  #page2 img {
+    height: 300px;
+    position: relative;
+    left: 20%;
+
+    rotate: 0deg;
+    margin-top: 50px;
+  }
+
+  #page2 h2 {
+    font-size: 18vw;
+    line-height: 15vw;
+    word-spacing: -2px;
+    letter-spacing: -1px;
+    text-align: center;
+    padding: 10px 10px;
+    color: #111;
+    position: relative;
+    font-family: america-b;
+  }
+
+  #page2 h2::after {
+    content: "THIRD GENERATION FAMILY-OWNED RANCH BROKERAGE";
+    font-size: 3.2vw;
+    line-height: 3.3vw;
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    width: 80%;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    font-family: gilroy;
+    font-weight: 600;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+
+  #page3 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #111;
+    padding: 100px 120px;
+  }
+
+  #page3 h1 {
+    color: #fff;
+    font-size: 9vw;
+    letter-spacing: -5px;
+    word-spacing: 0px;
+    line-height: 8vw;
+
+    font-family: america;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  #page3 h1::before {
+    content: "“";
+  }
+
+  #page3 h1::after {
+    content: "”";
+  }
+
+  #page3 h2 {
+    color: #fff;
+    font-size: 7.5vw;
+    letter-spacing: -5px;
+    word-spacing: 5px;
+    font-weight: 100;
+    font-family: america;
+    text-align: center;
+    -webkit-text-stroke: 3px #111;
+    text-transform: uppercase;
+  }
+
+  #page3 p {
+    color: #fff;
+    font-size: 1vw;
+    width: 50%;
+    font-weight: 600;
+    font-family: gilroy;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vw;
+    text-transform: uppercase;
+  }
+
+  #page3 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 150px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+  }
+
+  #img-div {
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 120px;
+    width: 120px;
+    background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/9b2b1e20d57cf6988eb3192c1a261b8475d701d4-8192x5464.jpg/JRP_BR_01_1165-Edit.jpg?rect=1038,632,3956,4832&bg=F2F1EC&fp-x=0.3681506849315068&fp-y=0.5578489448352462&w=640&h=815&fit=crop&crop=focalpoint&auto=format);
+    background-position: top;
+    background-size: cover;
+    -webkit-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+  }
+
+  #img-div h5 {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 5px 10px;
+    font-size: 10px;
+    text-transform: uppercase;
+    z-index: 99;
+    background-color: #fff;
+  }
+
+  #page4 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #111;
+    padding: 100px 0;
+  }
+
+  #page4 > button {
+    background-image: url(https://bowndsranches.com/textures/buttonBg.svg);
+    padding: 10px 20px;
+    position: absolute;
+    border: none;
+    font-family: america;
+    text-transform: uppercase;
+    font-size: 17px;
+    z-index: 99;
+    display: none;
+  }
+
+  #page4 > img {
+    height: 300px;
+    position: absolute;
+    width: 250px;
+    display: none;
+    z-index: 9;
+  }
+
+  .elem {
+    border-top: 1px solid #ffffffc1;
+    position: relative;
+    cursor: default;
+    margin-top: -4px;
+  }
+
+  .elem:nth-last-child(1) {
+    border-bottom: 1px solid #ffffffc1;
+  }
+  .elem::-webkit-scrollbar {
+    display: none;
+  }
+
+  .elem h1 {
+    font-size: 150px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-transition: opacity ease 0.1s;
+    -o-transition: opacity ease 0.1s;
+    transition: opacity ease 0.1s;
+    opacity: 0;
+    font-family: america-b;
+  }
+
+  .elem h2 {
+    font-size: 150px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-transition: opacity ease 0.1s;
+    -o-transition: opacity ease 0.1s;
+    transition: opacity ease 0.1s;
+  }
+
+  #moving-text {
+    /* background-color: #111; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    -webkit-transition: opacity ease 0.1s;
+    -o-transition: opacity ease 0.1s;
+    transition: opacity ease 0.1s;
+    opacity: 0;
+    z-index: 10;
+  }
+  #moving-text::-webkit-scrollbar {
+    display: none;
+  }
+
+  #moving-text h2 {
+    display: inline-block;
+    /* background-color: green; */
+    margin-left: -4px;
+    -webkit-animation-name: move-txt;
+    animation-name: move-txt;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    position: relative;
+    padding-right: 70px;
+    /* background-color: red; */
+    font-family: america-b;
+  }
+
+  #moving-text h2 img {
+    rotate: 45deg;
+    height: 30px;
+    right: 3%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+
+  .elem:hover #moving-text {
+    opacity: 1;
+  }
+
+  .elem:hover h1 {
+    opacity: 0;
+  }
+
+  @-webkit-keyframes move-txt {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+
+    100% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes move-txt {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+
+    100% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+
+  #page5 {
+    min-height: 100vh;
+    width: 100%;
+    padding: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  #page5-div1 {
+    height: 180px;
+    width: 280px;
+    position: absolute;
+    background-size: cover;
+    transform: rotate(0deg);
+    top: 5%;
+    right: 7%;
+    background-position: center;
+    background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/336838d48da46ea806426b4185e7f8a87262a6a5-1521x974.png/image.png?rect=1,0,1520,974&bg=F2F1EC&w=1024&h=656&auto=format);
+  }
+
+  #page5-div2 {
+    z-index: 99;
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    width: 280px;
+    transform: rotate(0deg);
+    top: 5%;
+    right: 7%;
+    position: absolute;
+    background-image: url(https://cdn.sanity.io/images/sjvffa0f/production/ac5d899c94acdca5124d1fcfb738940892e29544-1520x973.png/image.png?rect=0,1,1520,972&bg=F2F1EC&w=1024&h=655&auto=format);
+  }
+
+  #page6 {
+    min-height: 200vh;
+    width: 100%;
+    padding: 2px;
+    position: relative;
+  }
+
+  #page6 img {
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 100%;
+    object-position: center;
+    position: absolute;
+  }
+
+  #page6-text {
+    position: relative;
+    z-index: 99;
+    padding: 5px 20px;
+  }
+
+  #page6-text h1 {
+    font-size: 7.5vw;
+    line-height: 7vw;
+    color: #fff;
+    font-family: america;
+  }
+
+  #text-right {
+    position: absolute;
+    top: 150%;
+    right: 10%;
+    width: 20%;
+  }
+
+  #text-right p {
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  #page6-text button {
+    padding: 12px 30px;
+    font-size: 15px;
+    margin-top: 30px;
+    font-family: america;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all ease 0.2s;
+    -o-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+  }
+
+  #page6-text button:hover {
+    color: #111;
+  }
+
+  #page6-text button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    left: 0;
+    top: 100%;
+    -webkit-transition: all ease 0.2s;
+    -o-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+    z-index: -1;
+  }
+
+  #page6-text button:hover::after {
+    top: 0;
+  }
+
+  #text-center {
+    position: absolute;
+    top: 350%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    text-align: center;
+
+    width: 60%;
+  }
+
+  #page6-text h2 {
+    font-size: 4vw;
+    line-height: 3.5vw;
+    text-align: center;
+    font-family: america;
+    color: #fff;
+  }
+  /* ////////// */
+  #page8 {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: white;
+    color: black;
+  }
+  #page8 > button {
+    font-size: 0.8em;
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: #fff;
+    background-image: url(https://bowndsranches.com/textures/buttonBg.svg);
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    position: relative;
+    font-weight: 700;
+    border-width: 1px;
+    overflow: hidden;
+  }
+  #t8-1 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: america;
+    padding: 10px;
+    font-family: america;
+    font-weight: 800;
+    padding-top: 50px;
+  }
+  #t8-1 h1 {
+    font-size: 3.2em;
+  }
+  #t8-1 button {
+    font-size: 0.7em;
+    padding: 10px 20px;
+    background-color: transparent;
+    position: relative;
+    font-weight: 700;
+    border-width: 1px;
+    overflow: hidden;
+    z-index: 9;
+  }
+
+  #t8-1 button::after {
+    background-color: black;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    content: "";
+    -webkit-transition: ease-out 0.2s;
+    -o-transition: ease-out 0.2s;
+    transition: ease-out 0.2s;
+    z-index: -1;
+  }
+  #t8-1 button:hover {
+    color: rgb(255, 255, 255);
+  }
+  #t8-1 button:hover::after {
+    top: 0%;
+  }
+  #card {
+    position: relative;
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px;
+    gap: 25px;
+  }
+  .cards {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 500px;
+    height: 700px;
+    overflow: hidden;
+  }
+  .cardimg {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+  }
+  .cardimg img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    -o-transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  }
+  #t8-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2px;
+    gap: 20px;
+  }
+  .t8-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-weight: 800;
+  }
+  .t8-left h1 {
+    font-family: america;
+    font-size: 0.7em;
+    font-weight: 800;
+  }
+  .t8-left > h5 {
+    font-family: america;
+    font-size: 13px;
+    top: 17px;
+    font-weight: 600;
+    opacity: 0.8;
+  }
+  #t8-2 p {
+    position: relative;
+    top: 10px;
+    right: -1px;
+    font-size: 1.2em;
+  }
+  .cards:hover img {
+    scale: 1.1;
+  }
+
+  #page9 {
+    background-color: black;
+    height: 200vh;
+    width: 100%;
+    /* color: #F9F5EB; */
+    position: relative;
+  
+  }
+  #page9 > h1 {
+    position: relative;
+    top: 4px;
+    font-size: 6em;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 90%;
+    line-height: 0.8em;
+  }
+  #page9 > svg {
+    position: relative;
+    margin-top: 18%;
+  }
+  #page9 > h3 {
+    position: absolute;
+    width: 200px;
+    font-size: 3.2em;
+    line-height: 1em;
+    font-weight: 900;
+    left: 48.5%;
+    color: #fff;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    text-transform: uppercase;
+    text-align: center;
+  }
+  #page9 > h2 {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: auto;
+    font-size: 5em;
+    word-spacing: 0px;
+    line-height: 1em;
+    color: #fff;
+    text-transform: uppercase;
+    width: 60%;
+    left: 570px;
+    font-weight: 800;
+    text-align: right;
+  }
+  .text9p-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 26%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 10px;
+    padding: 20px;
+  }
+  .text9p-1 > input {
+    border: none;
+    background-color: transparent;
+    color: #f9f5eb;
+    text-transform: uppercase;
+    font-size: 2rem;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    outline: none;
+  }
+  .text9p-1 > button {
+    position: relative;
+    padding: 20px 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #f9f5eb;
+    /* border: 2px solid #F9F5EB; */
+    border-bottom: 1px solid #ffffffc1;
+    border-width: 1px;
+    z-index: 9;
+    border: none;
+    overflow: hidden;
+  }
+  .text9p-1 > button::after {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    content: "";
+    -webkit-transition: ease-out 0.2s;
+    -o-transition: ease-out 0.2s;
+    transition: ease-out 0.2s;
+    z-index: -1;
+  }
+  .text9p-1 > button:hover {
+    color: rgb(0, 0, 0);
+  }
+  .text9p-1 > button:hover::after {
+    top: 0%;
+  }
+  .line2 {
+    position: absolute;
+    width: 96%;
+    height: 1px;
+    background-color: #ffffff;
+    margin: 10px;
+  }
+  .h1-2 > h1 {
+    position: relative;
+    margin-top: 5%;
+    font-size: 9em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 9rem;
+  }
+  .h1-3 {
+    position: relative;
+    left: 70%;
+    top: -30px;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .h1-3 > h4 {
+    position: relative;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    color: #fff;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+
+  .h1-3 > h4:hover span {
+    opacity: 1;
+    -webkit-animation: span 0.8s linear infinite;
+    animation: span 0.8s linear infinite;
+  }
+  .h1-3 > h4 > span {
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    overflow: hidden;
+    opacity: 0;
+  }
+  @-webkit-keyframes span {
+    0% {
+      left: 0;
+      width: 0%;
+    }
+    50% {
+      left: 0;
+      width: 100%;
+    }
+    100% {
+      left: 100%;
+      width: 0%;
+    }
+  }
+  @keyframes span {
+    0% {
+      left: 0;
+      width: 0%;
+    }
+    50% {
+      left: 0;
+      width: 100%;
+    }
+    100% {
+      left: 100%;
+      width: 0%;
+    }
+  }
+}
+/* ////////////////// */
+
+#page8 {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-color: white;
+  color: black;
+}
+#page8 > button {
+  font-size: 0.8em;
+  padding: 10px 20px;
+  border: none;
+  background-color: black;
+  color: #fff;
+  background-image: url(https://bowndsranches.com/textures/buttonBg.svg);
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  font-weight: 700;
+  border-width: 1px;
+  overflow: hidden;
+}
+#t8-1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: america;
+  padding: 10px;
+  font-family: america;
+  font-weight: 800;
+  padding-top: 50px;
+}
+#t8-1 h1 {
+  font-size: 3.2em;
+}
+#t8-1 button {
+  font-size: 0.7em;
+  padding: 10px 20px;
+  background-color: transparent;
+  position: relative;
+  font-weight: 700;
+  border-width: 1px;
+  overflow: hidden;
+  z-index: 9;
+}
+
+#t8-1 button::after {
+  background-color: black;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  content: "";
+  transition: ease-out 0.2s;
+  z-index: -1;
+}
+#t8-1 button:hover {
+  color: rgb(255, 255, 255);
+}
+#t8-1 button:hover::after {
+  top: 0%;
+}
+#card {
+  position: relative;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 25px;
+}
+.cards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 700px;
+  overflow: hidden;
+}
+.cardimg {
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+}
+.cardimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#t8-2 {
+  display: flex;
+  padding: 2px;
+  gap: 20px;
+}
+.t8-left {
+  display: flex;
+  flex-direction: column;
+  font-weight: 800;
+}
+.t8-left {
+  font-family: america;
+  font-size: 0.7em;
+  font-weight: 800;
+}
+.t8-left > h5 {
+  font-family: america;
+  font-size: 13px;
+  top: 17px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+#t8-2 p {
+  position: relative;
+  top: 10px;
+  right: -1px;
+  font-size: 1.2em;
+}
+.cards:hover img {
+  scale: 1.1;
+}
+
+#page9 {
+  background-color:#151515;
+  height: 200vh;
+  width: 100%;
+  /* color: #F9F5EB; */
+  position: relative;
+}
+#page9 > h1 {
+  position: relative;
+  top: 4px;
+  font-size: 6em;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  width: 90%;
+  line-height: 0.8em;
+}
+#page9 > svg {
+  position: relative;
+  margin-top: 18%;
+}
+#page9 > h3 {
+  position: absolute;
+  width: 200px;
+  font-size: 3.2em;
+  line-height: 1em;
+  font-weight: 900;
+  left: 48.5%;
+  color: #fff;
+  transform: translate(-50%, 0);
+  text-transform: uppercase;
+  text-align: center;
+}
+#page9 > h2 {
+  position: absolute;
+  margin-top: 200px;
+  margin-left: auto;
+  font-size: 5em;
+  word-spacing: 0px;
+  line-height: 1em;
+  color: #fff;
+  text-transform: uppercase;
+  width: 60%;
+  left: 570px;
+  font-weight: 800;
+  text-align: right;
+}
+.text9p-1 {
+  display: flex;
+  margin-top: 26%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  padding: 20px;
+}
+.text9p-1 > input {
+  border: none;
+  background-color: transparent;
+  color: #f9f5eb;
+  text-transform: uppercase;
+  font-size: 2rem;
+  width: max-content;
+  outline: none;
+}
+.text9p-1 > button {
+  position: relative;
+  padding: 20px 30px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #f9f5eb;
+  /* border: 2px solid #F9F5EB; */
+  border-bottom: 1px solid #ffffffc1;
+  border-width: 1px;
+  z-index: 9;
+  border: none;
+  overflow: hidden;
+}
+.text9p-1 > button::after {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  content: "";
+  transition: ease-out 0.2s;
+  z-index: -1;
+}
+.text9p-1 > button:hover {
+  color: rgb(0, 0, 0);
+}
+.text9p-1 > button:hover::after {
+  top: 0%;
+}
+.line2 {
+  position: absolute;
+  width: 96%;
+  height: 1px;
+  background-color: #ffffff;
+  margin: 10px;
+}
+.h1-2 > h1 {
+  position: relative;
+  margin-top: 5%;
+  font-size: 9em;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 9rem;
+}
+.h1-3 {
+  position: relative;
+  left: 70%;
+  top: -30px;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.h1-3 > h4 {
+  position: relative;
+  width: max-content;
+  color: #fff;
+  height: max-content;
+}
+
+.h1-3 > h4:hover span {
+  opacity: 1;
+  animation: span 0.8s linear infinite;
+}
+.h1-3 > h4 > span {
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  overflow: hidden;
+  opacity: 0;
+}
+@keyframes span {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
